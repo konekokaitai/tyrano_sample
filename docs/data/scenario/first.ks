@@ -1,11 +1,11 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="食うか寝るかするメロス"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「寝るか走るか食うかするメロス」[l][r]
 
 メロスは激怒した。[l][r]
 
@@ -18,6 +18,8 @@
 
 [link target=*tag_sleep] →寝る [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
+[link target=*tag_eat] →食う [endlink][r]
+
 [s]
 
 *tag_sleep
@@ -28,6 +30,19 @@
 
 メロスは死んだように深く眠った。[l][r]
 勇者は、ひどく赤面した。[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_eat
+
+[cm]
+
+[bg storage=eat.png time=500]
+
+メロスは狂ったようにたくさん食べた。[l][r]
+勇者は、ひどく絶望した。[r]
 
 【 BAD END 】[l][cm]
 
